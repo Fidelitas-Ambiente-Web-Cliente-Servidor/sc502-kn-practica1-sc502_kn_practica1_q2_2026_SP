@@ -1,0 +1,12 @@
+/* imagenes de los cursos destacados*/
+.curso-img {
+    height: 200px;
+    object-fit: cover;
+    background-color: #e2e8f0;
+}
+
+/* fondo y estilos del hero */
+.hero-section {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url('https://th.bing.com/th/id/R.38ff3fb627339db867302ec38e976d40?rik=VzCq%2bipo8fc1TA&pid=ImgRaw&r=0') no-repeat center center/cover;
+    min-height: 80vh;
+}

@@ -1,0 +1,120 @@
+/* import de fuente de google */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+
+
+:root {
+    --primary-color: #ff4500;
+    --bg-color: #1e1e1e;
+    --secondary-color: #B22222;
+    --text-color: #f3f4f6;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* personalizacion de clases de bootstrap */
+.bg-navy {
+    background-color: var(--secondary-color) !important;
+}
+
+.texto-navy {
+    color: var(--secondary-color) !important;
+}
+
+.btn-academy {
+    background-color: var(--primary-color) !important;
+    color: #ffffff !important;
+    border: none;
+}
+
+.btn-academy:hover {
+    background-color: #d13700 !important;
+    color: #ffffff !important;
+}
+
+/* en el navbar activa el colorcito de la opcion que esta seleccionada*/
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--primary-color) !important;
+    font-weight: 700;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* margen de seccion */
+.seccion-navy {
+    padding: 60px 0;
+}
+
+/* redes sociales del footer */
+.redes-icono {
+    width: 32px;
+    height: 32px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease;
+}
+
+.redes-icono:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+/* placeholder de las paginas en desarrollo*/
+/* esto despues acuerdense de quitarlo segun el rol */
+.dev-placeholder {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dev-card {
+    background-color: #ffffff;
+    border: 2px dashed var(--primary-color);
+    border-radius: 8px;
+    padding: 40px;
+}
+
+.dev-icon {
+    font-size: 3rem;
+}
+
+.dev-title {
+    font-size: 1.5rem;
+}
+
+.dev-text {
+    color: #9ca3af;
+    font-size: 0.9rem;
+}
+
+/* Overrides para el Dark Theme (sobreescribir Bootstrap) */
+.card {
+    background-color: #27272a !important;
+    color: var(--text-color) !important;
+    border: 1px solid #3f3f46 !important;
+}
+
+.card-title {
+    color: #ffffff !important;
+}
+
+.text-muted {
+    color: #9ca3af !important;
+}
+
+.bg-light,
+.bg-white {
+    background-color: var(--bg-color) !important;
+}
+
+.border-bottom,
+.border-top {
+    border-color: #3f3f46 !important;
+}
