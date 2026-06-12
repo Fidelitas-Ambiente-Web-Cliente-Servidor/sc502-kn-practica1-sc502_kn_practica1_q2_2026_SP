@@ -9,6 +9,17 @@ document.addEventListener("DOMContentLoaded", function () {
             const navbarPlaceholder = document.getElementById('navbar-placeholder');
             if (navbarPlaceholder) {
                 navbarPlaceholder.innerHTML = data;
+
+                // para que se marque en que columna esta uno en el navbar
+                let currentLocation = window.location.pathname.split('/').pop() || 'index.html';
+                const navLinks = navbarPlaceholder.querySelectorAll('.nav-link');
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === currentLocation) {
+                        link.classList.add('active');
+                    }
+                });
             }
         })
         .catch(error => console.error(error));

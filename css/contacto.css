@@ -1,0 +1,27 @@
+/* iconos redondos de contacto */
+.icono-contacto {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+/* campos del formulario */
+.form-control {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(255, 69, 0, 0.25);
+    background-color: #2a2a2d !important;
+    color: #ffffff !important;
+}
+
+.list-unstyled li:hover .bg-navy {
+    background-color: var(--primary-color) !important;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.list-unstyled li .bg-navy {
+    transition: all 0.3s ease;
+}
